@@ -9,10 +9,15 @@ public class MyThread implements Runnable{
         this.latch = latch;
         this.name = name;
     }
+
+    public MyThread(){
+
+    }
+
     @Override
     public void run() {
-
-        latch.countDown();
+        System.out.println("thread running");
+        // latch.countDown();
     }
 
 }
